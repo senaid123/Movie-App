@@ -1,0 +1,18 @@
+<p>movies-list works!</p>
+
+<div *ngIf="!movies">
+    there are no records to display
+</div>
+<div *ngIf="movies.length <=0" >
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921">
+</div>
+<ng-container *ngIf="movies && movies.length > 0" >
+    <div  *ngFor="let movie of movies; let index = index" class="movie-container">
+        <div>{{index}}  {{movie.title}}
+            <button style="margin-left: 1rem;" (click)="remove(index)">Remove</button>
+        </div>
+
+        <div>{{movie.price}}</div>
+        <div>{{movie.releaseDate | date:"MMMM-dd-yyyy"}}</div>
+    </div>
+</ng-container>

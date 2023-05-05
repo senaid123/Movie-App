@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+}
+
+.movie-container{
+    border: 1px solid black;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    display: block;
+}
