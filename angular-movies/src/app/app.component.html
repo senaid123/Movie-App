@@ -1,25 +1,10 @@
-<h1>Hello World</h1>
-<div>
-    {{title}}
-</div>
-<div>the sum of 2 and 2 is {{2+2}}</div>
-<div>double of number 3 is {{duplicateNumber(3)}}</div>
-<div>
-    <div> {{movie.title | uppercase}}</div>
-    <div> {{movie.releaseDate | date:"MMMM-dd-yyyy" | uppercase}}</div>
-    <div>{{movie.price | currency}}</div>
-</div>
-<div *ngIf="employees.length <=0" >
-    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921">
-</div>
-<div *ngIf="employees.length > 0" >
-    <div  *ngFor="let employee of employees; let index = index" class="movie-container">
-        <div>{{index}}  {{employee.name}}</div>
-        <div>{{employee.phone}}</div>
-        <div>{{employee.email}}</div>
-        <div>{{employee.department}}</div>
-        <div>{{employee.signingDate | date:"MMMM-dd-yyyy"}}</div>
-    </div>
-</div>
 
 <router-outlet></router-outlet>
+
+<h2>In theaters</h2>
+
+<app-movies-list  [movies]="moviesInTheaters"></app-movies-list>
+
+<h2>Future Realeases</h2>
+
+<app-movies-list [movies]="moivesFutureReleases"></app-movies-list>

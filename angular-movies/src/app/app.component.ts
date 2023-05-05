@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Movies from './data/movies.interface';
 
 @Component({
   selector: 'app-root',
@@ -9,53 +10,47 @@ import { Component, OnInit } from '@angular/core';
 
 export class AppComponent implements OnInit {
   ngOnInit(): void {
-    setTimeout(()=>{
-      this.employees = [
+    this.moviesInTheaters = [
+      {
+        title: "John Wick",
+        releaseDate: new Date('2022-02-12'),
+        price: 14322423
+        
+      },
+      {
+        title: "Spider-man",
+        releaseDate: new Date('2015-11-13'),
+        price: 22345
+      },
+      {
+        title: "Ant-man",
+        releaseDate: new Date('2013-11-13'),
+        price: 324231
+      }
+    ]
+
+      this.moivesFutureReleases = [
         {
-          name: "John",
-          phone: 223454,
-          email: "johndoe@gmail.com",
-          department: "IT",
-          signingDate: new Date()
+          title: "Infinity war",
+          releaseDate: new Date('2001-22-12'),
+          price: 14322423
+          
         },
         {
-          name: "Mark",
-          phone: 214542,
-          email: "markzucc@gmail.com",
-          department: "Management",
-          signingDate: new Date()
+          title: "John wick 3",
+          releaseDate: new Date('2023-11-13'),
+          price: 22345
         },
         {
-          name: "Joe",
-          phone: 12434,
-          email: "joeblack@gmail.com",
-          department: "Human Resources",
-          signingDate: new Date()
+          title: "Slender Man",
+          releaseDate: new Date('2013-11-13'),
+          price: 324231
         }
-      ];
-    },1000)
-  }
+      ]
+    }
 
-
-  employees: Employees[] = [];
-
-  movie = {
-    title: "Spiderman",
-    releaseDate: new Date(),
-    price: 1400.99
-  };
-
-   title : string = 'Any value';
-
-   duplicateNumber(number : number){
-      return number * 2;
-   }
+  moivesFutureReleases: Movies[] = [];
+  moviesInTheaters: Movies[] = [];
 }
 
-interface Employees{
-  name: string;
-  phone: number;
-  email: string;
-  department: string;
-  signingDate: Date;
-}
+
