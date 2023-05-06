@@ -1,0 +1,6 @@
+mat-toolbar{
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 100;
+    top: 0;
+}

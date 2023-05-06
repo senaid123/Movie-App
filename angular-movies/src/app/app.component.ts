@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
         title: "John Wick",
         releaseDate: new Date('2022-02-12'),
         price: 14322423
-        
+
       },
       {
         title: "Spider-man",
@@ -29,8 +29,41 @@ export class AppComponent implements OnInit {
       }
     ]
 
-      this.moivesFutureReleases = [];
-    }
+    this.moivesFutureReleases = [
+      {
+        title: "John Wick",
+        releaseDate: new Date('2022-02-12'),
+        price: 14322423
+
+      },
+      {
+        title: "Spider-man",
+        releaseDate: new Date('2015-11-13'),
+        price: 22345
+      },
+      {
+        title: "Ant-man",
+        releaseDate: new Date('2013-11-13'),
+        price: 324231
+      },
+      {
+        title: "John Wick",
+        releaseDate: new Date('2022-02-12'),
+        price: 14322423
+
+      },
+      {
+        title: "Spider-man",
+        releaseDate: new Date('2015-11-13'),
+        price: 22345
+      },
+      {
+        title: "Ant-man",
+        releaseDate: new Date('2013-11-13'),
+        price: 324231
+      }
+    ];
+  }
 
   moivesFutureReleases: Movies[] = [];
   moviesInTheaters: Movies[] = [];
