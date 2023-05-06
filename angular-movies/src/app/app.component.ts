@@ -29,24 +29,7 @@ export class AppComponent implements OnInit {
       }
     ]
 
-      this.moivesFutureReleases = [
-        {
-          title: "Infinity war",
-          releaseDate: new Date('2001-22-12'),
-          price: 14322423
-          
-        },
-        {
-          title: "John wick 3",
-          releaseDate: new Date('2023-11-13'),
-          price: 22345
-        },
-        {
-          title: "Slender Man",
-          releaseDate: new Date('2013-11-13'),
-          price: 324231
-        }
-      ]
+      this.moivesFutureReleases = [];
     }
 
   moivesFutureReleases: Movies[] = [];
