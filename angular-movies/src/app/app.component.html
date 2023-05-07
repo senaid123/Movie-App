@@ -1,16 +1,5 @@
 <app-menu></app-menu>
 
-<app-ratings (onRating)="handleRating($event)"></app-ratings>
-
 <div class="container">
-    
-<h2>In theaters</h2>
-
-<app-movies-list [movies]="moviesInTheaters"></app-movies-list>
-
-<h2>Future Realeases</h2>
-
-<app-movies-list [movies]="moivesFutureReleases"></app-movies-list>
-
 </div>
 <router-outlet></router-outlet>

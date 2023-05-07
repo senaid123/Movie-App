@@ -9,13 +9,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { MenuComponent } from './menu/menu.component';
 import { RatingsComponent } from './utilities/ratings/ratings.component';
+import { HomeComponent } from './home/home.component';
+import { IndexGenresComponent } from './genres/index-genres/index-genres.component';
+import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     MoviesListComponent,
     GenericListComponent,
     MenuComponent,
-    RatingsComponent
+    RatingsComponent,
+    HomeComponent,
+    IndexGenresComponent,
+    CreateGenreComponent
   ],
   imports: [
     BrowserModule,
