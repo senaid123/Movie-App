@@ -36,5 +36,6 @@ export class RatingsComponent implements OnInit {
   rate(index: number) {
     this.selectedRate = index + 1;
     this.previousRate = this.selectedRate;
+    this.onRating.emit(this.selectedRate);
   }
 }

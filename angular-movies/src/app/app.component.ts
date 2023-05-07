@@ -67,6 +67,10 @@ export class AppComponent implements OnInit {
 
   moivesFutureReleases: Movies[] = [];
   moviesInTheaters: Movies[] = [];
+
+  handleRating(rate : number){
+    alert("user selected this rate" + rate);
+  }
 }
 
 
