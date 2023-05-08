@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-create-genre',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-genre.component.css']
 })
 export class CreateGenreComponent {
+  constructor(private router: Router) {}
 
+  saveChanges() {
+    this.router.navigate(["/genres"])
+  }
 }

@@ -12,6 +12,10 @@ import { RatingsComponent } from './utilities/ratings/ratings.component';
 import { HomeComponent } from './home/home.component';
 import { IndexGenresComponent } from './genres/index-genres/index-genres.component';
 import { CreateGenreComponent } from './genres/create-genre/create-genre.component';
+import { IndexActorsComponent } from './actors/index-actors/index-actors.component';
+import { CreateActorComponent } from './actors/create-actor/create-actor.component';
+import { IndexMovieTheaterComponent } from './movie-theaters/index-movie-theater/index-movie-theater.component';
+import { CreateMovieTheaterComponent } from './movie-theaters/create-movie-theater/create-movie-theater.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { CreateGenreComponent } from './genres/create-genre/create-genre.compone
     RatingsComponent,
     HomeComponent,
     IndexGenresComponent,
-    CreateGenreComponent
+    CreateGenreComponent,
+    IndexActorsComponent,
+    CreateActorComponent,
+    IndexMovieTheaterComponent,
+    CreateMovieTheaterComponent
   ],
   imports: [
     BrowserModule,
