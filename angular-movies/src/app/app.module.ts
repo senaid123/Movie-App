@@ -16,6 +16,7 @@ import { IndexActorsComponent } from './actors/index-actors/index-actors.compone
 import { CreateActorComponent } from './actors/create-actor/create-actor.component';
 import { IndexMovieTheaterComponent } from './movie-theaters/index-movie-theater/index-movie-theater.component';
 import { CreateMovieTheaterComponent } from './movie-theaters/create-movie-theater/create-movie-theater.component';
+import { CreateMovieComponent } from './movies/create-movie/create-movie.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CreateMovieTheaterComponent } from './movie-theaters/create-movie-theat
     IndexActorsComponent,
     CreateActorComponent,
     IndexMovieTheaterComponent,
-    CreateMovieTheaterComponent
+    CreateMovieTheaterComponent,
+    CreateMovieComponent
   ],
   imports: [
     BrowserModule,
