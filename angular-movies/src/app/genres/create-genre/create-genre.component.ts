@@ -1,24 +1,19 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
 import { Router } from '@angular/router';
-
+import {genreCreationDTO} from '../genre.model'
 @Component({
   selector: 'app-create-genre',
   templateUrl: './create-genre.component.html',
   styleUrls: ['./create-genre.component.css']
 })
-export class CreateGenreComponent {
-  constructor(private router: Router, private formBuilder: FormBuilder) {}
 
-  form!: FormGroup;
+export class CreateGenreComponent { 
+  constructor(private router: Router) { }
 
-  ngOnInit(): void{
-    this.form = this.formBuilder.group({
-      name: '',
-    })
-  }
+  ngOnInit(): void {  }
 
-  saveChanges() {
+  saveChanges(genreCreationDTO: genreCreationDTO) {
+    console.log(genreCreationDTO);
     this.router.navigate(["/genres"])
   }
 }
