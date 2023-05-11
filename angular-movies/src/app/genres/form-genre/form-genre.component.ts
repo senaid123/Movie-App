@@ -2,7 +2,6 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { firstLetterUppercase } from 'src/app/validators/firstLetterUppercase';
-import { CreateGenreComponent } from '../create-genre/create-genre.component';
 import { genreCreationDTO } from '../genre.model';
 
 @Component({
@@ -14,7 +13,7 @@ export class FormGenreComponent {
   constructor(private router: Router, private formBuilder: FormBuilder) { }
 
   @Input()
-  model : genreCreationDTO | undefined;
+  model: genreCreationDTO | undefined;
 
   form!: FormGroup;
 
@@ -28,7 +27,7 @@ export class FormGenreComponent {
       }]
     })
 
-    if(this.model !== undefined){
+    if (this.model !== undefined) {
       this.form.patchValue(this.model);
     }
   }

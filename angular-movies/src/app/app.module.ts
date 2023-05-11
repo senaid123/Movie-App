@@ -2,6 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core'
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -25,8 +29,7 @@ import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormGenreComponent } from './genres/form-genre/form-genre.component';
 import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
-import { MatSelectModule } from '@angular/material/select';
-import {MatCheckboxModule} from '@angular/material/checkbox'
+import { FormActorComponent } from './actors/form-actor/form-actor.component'
 
 @NgModule({
   declarations: [
@@ -49,7 +52,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox'
     EditMovieComponent,
     NotFoundComponent,
     FormGenreComponent,
-    MovieFilterComponent
+    MovieFilterComponent,
+    FormActorComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,9 @@ import {MatCheckboxModule} from '@angular/material/checkbox'
     MaterialModule,
     ReactiveFormsModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatDatepickerModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
