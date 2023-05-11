@@ -13,6 +13,7 @@ import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 import { EditGenresComponent } from './genres/edit-genres/edit-genres.component';
 import { EditMovieTheaterComponent } from './movie-theaters/edit-movie-theater/edit-movie-theater.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
 
 const routes: Routes = [
   { path: "", component: HomeComponent },
@@ -31,6 +32,8 @@ const routes: Routes = [
 
   { path: "movies/create", component: CreateMovieComponent },
   { path: "movies/edit/:id", component: EditMovieComponent },
+
+  {path: "movies/filter", component: MovieFilterComponent},
 
   {path: "**", component: NotFoundComponent},
 

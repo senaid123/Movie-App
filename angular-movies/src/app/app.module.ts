@@ -24,6 +24,9 @@ import { EditMovieTheaterComponent } from './movie-theaters/edit-movie-theater/e
 import { EditMovieComponent } from './movies/edit-movie/edit-movie.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormGenreComponent } from './genres/form-genre/form-genre.component';
+import { MovieFilterComponent } from './movies/movie-filter/movie-filter.component';
+import { MatSelectModule } from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox'
 
 @NgModule({
   declarations: [
@@ -45,14 +48,17 @@ import { FormGenreComponent } from './genres/form-genre/form-genre.component';
     EditMovieTheaterComponent,
     EditMovieComponent,
     NotFoundComponent,
-    FormGenreComponent
+    FormGenreComponent,
+    MovieFilterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
